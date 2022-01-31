@@ -31,6 +31,7 @@ class LinkedList{
   while(addNode.data !== valueAfter && addNode.next !== null){
   addNode = addNode.next;
   };
+
   addNode.next = {
     data: valueToAdd,
     next: addNode.next
@@ -54,10 +55,10 @@ class LinkedList{
 
 const LinkedList1 = new LinkedList();
 LinkedList1.append(1);
-LinkedList1.append(2);
-LinkedList1.append(33);
+LinkedList1.append(3);
 LinkedList1.append(333);
 LinkedList1.append(44);
-LinkedList1.add(11, 33);
 LinkedList1.delete(3)
 LinkedList1.print();
+console.log(result);
+console.log(linkedList1.find(44));
